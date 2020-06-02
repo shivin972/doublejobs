@@ -2,13 +2,13 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/Hello World:2.4.1
+      - image: circleci/ruby:2.4.1
     steps:
       - checkout
       - run: echo "My name is Pravin Rai"
   test:
     docker:
-      - image: circleci/Hello World:2.4.1
+      - image: circleci/ruby:2.4.1
     steps:
       - checkout
       - run: echo "I work in Capgemini"
