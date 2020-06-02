@@ -2,14 +2,10 @@
 version: 2.1
 jobs:
   hworld:
-    docker:
-      - image: circleci/<language>:<version TAG>
     steps:
       - checkout
       - run: echo "Hello World"
   name:
-    docker:
-      - image: circleci/<language>:<version TAG>
     steps:
       - checkout
       - run: echo "My name is Pravin Rai"
