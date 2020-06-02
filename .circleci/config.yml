@@ -1,12 +1,12 @@
 version: 2
 jobs:
-  build:
+  name:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
       - run: echo "My name is Pravin Rai"
-  test:
+  office:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
@@ -14,7 +14,7 @@ jobs:
       - run: echo "I work in Capgemini"
 workflows:
   version: 2
-  build_and_test:
+  name_and_office:
     jobs:
-      - build
-      - test
+      - name
+      - office
