@@ -2,10 +2,12 @@
 version: 2.1
 jobs:
   hworld:
+    docker:
     steps:
       - checkout
       - run: echo "Hello World"
   name:
+    docker:
     steps:
       - checkout
       - run: echo "My name is Pravin Rai"
